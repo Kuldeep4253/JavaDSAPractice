@@ -61,7 +61,7 @@ import com.sun.source.tree.Tree;
         right.right=right2;
         TreeNode left3=new TreeNode(80);
         left1.left=left3;
-        TreeNode left4=new TreeNode(900);
+        TreeNode left4=new TreeNode(90);
         left3.left=left4;
         return root;
 
