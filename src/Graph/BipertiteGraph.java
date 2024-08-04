@@ -43,7 +43,16 @@ public class BipertiteGraph {
             adj_list.get(source).add(dest);
             adj_list.get(dest).add(source);
         }
-        return isBipertite(0,colorArr,adj_list);
+        int ans=1;
+        // If any not connected component then Visit all node and verify all coverd
+        for (int i = 0; i < B.length; i++) {
+            if(colorArr[i]==-1){
+                int temp=isBipertite(i,colorArr,adj_list);
+                ans=ans*temp;
+            }
+        }
+        return ans;
+
     }
 
     public int isBipertite(int source,int[] colorArr,ArrayList<ArrayList<Integer>> adj_list){
@@ -82,7 +91,8 @@ public class BipertiteGraph {
     // Driver program to test above function
     public static void main (String[] args)
     {
-        int G[][] = {{7,8},{1,2},{0,9},{1,3},{6,7},{0,3},{2,5},{3,8},{4,8}};
+        //int G[][] = {{7,8},{1,2},{0,9},{1,3},{6,7},{0,3},{2,5},{3,8},{4,8}};
+        int G[][] = {{0,1},{0,2},{3,4},{3,5},{4,5}};
         System.out.println(G.length);
         BipertiteGraph b = new BipertiteGraph();
         System.out.println(b.solve(10,G));
