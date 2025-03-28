@@ -79,7 +79,6 @@ Explanation 2:
         Arrays.fill(dp,0);
         dp[0]=1;
         //This loop running on coin and check way of sum using this coin
-
         for(int i=0;i<A.length;i++){
             int coin=A[i];
             // This loop iterate on sum start from coin to k and collect every possible way to reach sum

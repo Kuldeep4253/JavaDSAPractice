@@ -4,8 +4,6 @@ public class ColumnSum {
      public static int[] solve(int[][] A) {
 
          int [] columnsum=new int[A.length];
-
-         int length=A.length;
          for(int i=0;i<A.length;i++){
              int sum=0;
              for(int j=0;j<A.length;j++){

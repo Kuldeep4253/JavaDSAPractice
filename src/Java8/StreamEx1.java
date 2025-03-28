@@ -40,8 +40,13 @@ public class StreamEx1 {
        List<Test> setDups = ar.stream().filter(s -> !setUniques.add(s))
                .collect(Collectors.toList());
        System.out.println("using set: " + setDups);
-
+       System.out.println(t3.equals(t4));
        System.out.println(t1.equals(t5));
+
+
+
+
+
 
 
 
