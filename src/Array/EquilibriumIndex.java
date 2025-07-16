@@ -35,7 +35,8 @@ public class EquilibriumIndex {
         return count;
     }
     public static void main(String...k){
-        int A[]={-7, 1, 5, 2, -4, 3, 0};
+        //int A[]={-7, 1, 5, 2, -4, 3, 0};1,2,3,7,1,2,3
+        int A[]={1,2,3,7,1,2,3};
         System.out.println(solve(A));
 
     }
