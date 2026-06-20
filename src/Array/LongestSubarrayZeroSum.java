@@ -23,7 +23,7 @@ public class LongestSubarrayZeroSum {
         return 0;
     }    // Using Array and prefix sum
 
-    public static int findLengthusingHashMap(int[] A) {
+    public static int findLengthUsingHashMap(int[] A) {
 
         HashMap<Long, Integer> pref = new HashMap<Long, Integer>();
         Long curr = 0L;

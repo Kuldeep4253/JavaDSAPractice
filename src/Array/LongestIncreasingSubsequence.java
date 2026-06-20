@@ -15,7 +15,6 @@ In this case, return the length of the longest increasing subsequence.
     public int lis(final List<Integer> A) {
         dp=new int[A.size()];
         Arrays.fill(dp,1);
-
         return LIS(A);
     }
 
